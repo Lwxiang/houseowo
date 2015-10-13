@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            香菜蘑菇园
+        </title>
+    </head>
+    <body>
+        <p>武汉理工大学招聘会信息</p>
+        <div class="wrapper">
+            {% for i in a %}
+                <div class="box {{ forloop.counter }}">
+                <p>{{ forloop.counter }}号招聘会</p>
+                {{ i|safe }}
+                </div>
+            {% endfor %}
+        </div>
+    </body>
+</html>
