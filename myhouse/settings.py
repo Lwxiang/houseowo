@@ -65,7 +65,11 @@ DATABASES = {
 }
 
 TEMPLATE_DIRS = (
-    os.path.join(os.path.split(os.path.dirname(__file__))[0], 'static').replace('\\','/'),
+    os.path.join(os.path.split(os.path.dirname(__file__))[0], 'static').replace('\\', '/'),
+)
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
 )
 
 # Internationalization

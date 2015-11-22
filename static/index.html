@@ -1,19 +1,28 @@
 <!DOCTYPE HTML>
 <html>
+    {% load staticfiles %}
     <head>
+        <link rel="shortcut icon" href="{% static "fangzi.ico" %}" rel="shortcut icon">
         <title>
             香菜蘑菇园
         </title>
     </head>
+    <style>
+        body{
+            background-color: black;
+        }
+        div{
+            text-align: center;
+            margin-top: 7%;
+        }
+        img{
+            width: 640px;
+            height: 640px;
+        }
+    </style>
     <body>
-        <p>武汉理工大学招聘会信息</p>
-        <div class="wrapper">
-            {% for i in a %}
-                <div class="box {{ forloop.counter }}">
-                <p>{{ forloop.counter }}号招聘会</p>
-                {{ i|safe }}
-                </div>
-            {% endfor %}
+        <div class="child">
+            <img src="{% static "bg.gif" %}" style="background-image:url({% static "we.jpg" %});" />
         </div>
     </body>
 </html>
