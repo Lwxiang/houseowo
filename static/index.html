@@ -11,18 +11,29 @@
         body{
             background-color: black;
         }
-        div{
+        .photo-hold{
             text-align: center;
             margin-top: 7%;
         }
-        img{
+        .love-hold{
+            text-align: center;
+            margin-top: 2%;
+        }
+        .photo{
             width: 640px;
             height: 640px;
         }
+        .love{
+            width: 50px;
+            height: 50px;
+        }
     </style>
     <body>
-        <div class="child">
-            <img src="{% static "bg.gif" %}" style="background-image:url({% static "we.jpg" %});" />
+        <div class="photo-hold">
+            <img class="photo" src="{% static "bg.gif" %}" style="background-image:url({% static "we.jpg" %});" />
+        </div>
+        <div class="love-hold">
+            <img class="love" src="{% static "love.png" %}">
         </div>
     </body>
 </html>
